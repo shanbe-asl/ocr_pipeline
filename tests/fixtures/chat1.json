@@ -1,0 +1,70 @@
+{
+    "text_blocks": [
+      {
+        "text": "Если можно желательно, хотя бы через минут 45 чтобы доставили, и пожалуйста сообщите курьеру чтобы позвонили на телефон. В домофон чтобы НЕ звонили вообще! Спасибо вам",
+        "language": "ru",
+        "coordinates": [50, 150, 980, 360],
+        "confidence": 0.95
+      },
+      {
+        "text": "Урманбетова Ангелина Кемалбековна",
+        "language": "ru",
+        "coordinates": [40, 380, 920, 430],
+        "confidence": 0.95
+      },
+      {
+        "text": "1. Панфилова 294 ( пересекает Баялинова)",
+        "language": "ru",
+        "coordinates": [40, 430, 920, 480],
+        "confidence": 0.95
+      },
+      {
+        "text": "2. +996 552 666 544",
+        "language": "ru",
+        "coordinates": [40, 480, 920, 530],
+        "confidence": 0.95
+      },
+      {
+        "text": "Нам указать данный номер для связи с курьером?",
+        "language": "ru",
+        "coordinates": [40, 560, 900, 650],
+        "confidence": 0.95
+      },
+      {
+        "text": "+996 504 701 555 ~Vegas Beauty Bar",
+        "language": "ru",
+        "coordinates": [50, 670, 980, 730],
+        "confidence": 0.95
+      },
+      {
+        "text": "Нам указать данный номер для связи с курьером?",
+        "language": "ru",
+        "coordinates": [50, 730, 980, 790],
+        "confidence": 0.95
+      },
+      {
+        "text": "Да, пожалуйста.",
+        "language": "ru",
+        "coordinates": [50, 790, 980, 840],
+        "confidence": 0.95
+      },
+      {
+        "text": "Оформляем",
+        "language": "ru",
+        "coordinates": [40, 860, 940, 910],
+        "confidence": 0.95
+      },
+      {
+        "text": "Когда курьер примет заказ, вам придет уведомление в Яндексе",
+        "language": "ru",
+        "coordinates": [40, 910, 940, 1000],
+        "confidence": 0.95
+      },
+      {
+        "text": "Спасибо",
+        "language": "ru",
+        "coordinates": [50, 1020, 600, 1100],
+        "confidence": 0.95
+      }
+    ]
+  }
