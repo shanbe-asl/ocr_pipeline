@@ -32,8 +32,9 @@ class DummyModel:
 
 @pytest.fixture(autouse=True)
 def patch_model(monkeypatch):
-    # Патчим модель в pipeline.detection
-    monkeypatch.setattr('pipeline.detection.model', DummyModel())
+    # Патчим модель в модуле pipeline.detection
+    import pipeline.detection as det_mod
+    monkeypatch.setattr(det_mod, 'model', DummyModel(), raising=True)
     yield
 
 

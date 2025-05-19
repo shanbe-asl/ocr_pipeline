@@ -33,13 +33,19 @@ if __name__ == '__main__':
     chat = img[y1:y2, x1:x2]
     masked = mask_ui_elements(chat, ui_hsv_ranges=[(np.array([0,0,0]), np.array([180,255,30]))])
     pre = preprocess(masked)
-    boxes = segment_messages(masked)
+    boxes = segment_messages(pre) # segmentation на .pre
+
     all_blocks = []
     for bx,by,bx2,by2 in boxes:
-        region = masked[by:by2, bx:bx2]
+        region = pre[by:by2, bx:bx2] # OCR тоже на .pre
         blocks = run_tesseract(region)
         for b in blocks:
-            b['coordinates'] = [b['coordinates'][0]+bx, b['coordinates'][1]+by, b['coordinates'][2]+bx, b['coordinates'][3]+by]
+            b['coordinates'] = [
+                b['coordinates'][0] + bx + x1,
+                b['coordinates'][1] + by + y1,
+                b['coordinates'][2] + bx + x1,
+                b['coordinates'][3] + by + y1,
+            ]
         all_blocks.extend(blocks)
     final = postprocess(all_blocks)
     export_json(final, args.output)
